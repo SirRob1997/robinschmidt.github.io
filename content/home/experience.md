@@ -69,7 +69,7 @@ date_format = "Jan 2006"
   """
   
 [[experience]]
-  title = "Benchmarking Deep Learning Optimizers"
+  title = "Research on Benchmarking Deep Learning Optimizers"
   company = "Prof. Dr. Philipp Hennig"
   company_url = "https://pn.is.tuebingen.mpg.de/person/phennig"
   location = "Tübingen"
