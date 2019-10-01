@@ -18,19 +18,17 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
-  description = """
-  Responsibilities include:
-  
-  * Analysing
-  * Modelling
-  * Deploying
-  """
+  title = "Research on New SQL Databases"
+  company = "Prof. Dr.-Ing. Olaf Herden"
+  company_url = "https://expertenservice.dhbw-stuttgart.de/experteninnen-technik/informatik/olaf-herden/"
+  location = "Horb"
+  date_start = "2017-10-01"
+  date_end = "2018-06-11"
+  description = """In terms of academic research I started gaining experience during my undergraduate degree, where I’ve
+                 worked with Prof. Dr.-Ing. Olaf Herden. With him, I did research on the topic of New SQL databases
+                 and evaluated different Open Source New SQL databases in terms of modern application scenarios. For
+                 that, I’ve used a model for evaluating Open Source software called the Business Readiness Rating which
+                 favored VoltDB"""
 
 [[experience]]
   title = "Professor"
