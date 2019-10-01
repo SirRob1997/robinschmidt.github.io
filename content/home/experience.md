@@ -24,19 +24,34 @@ date_format = "Jan 2006"
   location = "Horb"
   date_start = "2017-10-01"
   date_end = "2018-06-11"
-  description = """In terms of academic research I started gaining experience during my undergraduate degree, where I’ve
-                 worked with Prof. Dr.-Ing. Olaf Herden. With him, I did research on the topic of New SQL databases
+  description = """With Prof. Dr.-Ing. Olaf Herden, I did research on the topic of New SQL databases
                  and evaluated different Open Source New SQL databases in terms of modern application scenarios. For
                  that, I’ve used a model for evaluating Open Source software called the Business Readiness Rating which
                  favored VoltDB"""
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  title = "Cooperative Studies in a dual setup"
+  company = "Eisenmann SE"
+  company_url = "https://www.eisenmann.com/de.html"
+  location = "Böblingen"
+  date_start = "2015-10-01"
+  date_end = "2018-10-31"
+  description = """ Frequent and extended industry research & development projects during term breaks. 
+  
+  Topics include:
+    
+    * Key Performance Indicators inside Manufacturing Execution Systems
+    * Improvement of the data analysis inside Manufacturing Execution Systems
+  """
+  
+[[experience]]
+  title = "Bachelor thesis"
+  company = "ENisco GmbH & Co. KG"
+  company_url = "http://www.enisco.de/"
+  location = "Böblingen"
+  date_start = "2018-06-12"
+  date_end = "2018-09-03"
+  description = """I did my bachelor thesis in subsidiary of Eisenmann SE on the topic "Conception and implementation of a single product tracking in a press-hardening production line". My Supervisor was Prof. Dr. phil. Antonius J.M. van Hoof
+  """
 
 +++
