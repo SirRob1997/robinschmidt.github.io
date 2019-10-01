@@ -36,7 +36,7 @@ date_format = "Jan 2006"
   location = "Böblingen"
   date_start = "2015-10-01"
   date_end = "2018-10-31"
-  description = """ Frequent and extended industry research & development projects during term breaks. This is equivalent to 5 internships each with a duration of 3-4 months.
+  description = """ Frequent and extended industry research & development projects during term breaks. This is approximately equivalent to 5 internships each with a duration of 3-4 months.
   
   Some of them yielded whitepapers with the topics:
     
