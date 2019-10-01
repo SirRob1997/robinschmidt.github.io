@@ -51,7 +51,34 @@ date_format = "Jan 2006"
   location = "Böblingen"
   date_start = "2018-06-12"
   date_end = "2018-09-03"
-  description = """I did my bachelor thesis in subsidiary of Eisenmann SE on the topic "Conception and implementation of a single product tracking in a press-hardening production line". My Supervisor was Prof. Dr. phil. Antonius J.M. van Hoof
+  description = """I did my bachelor thesis in subsidiary of Eisenmann SE on the topic "Conception and implementation of a single product tracking in a press-hardening production line". My supervisor was Prof. Dr. phil. Antonius J.M. van Hoof
   """
+  
+[[experience]]
+  title = "Extreme Blue Internship"
+  company = "IBM"
+  company_url = "https://www.ibm.com/de-de"
+  location = "Böblingen"
+  date_start = "2019-08-05"
+  date_end = "2019-10-11"
+  description = """Here, I’ve researched the connection between Internet of Things
+                   and Master Data Management with great success. This included use case research as well as looking into the
+                   current data model and proposing changes, which needed to be made to support the upcoming use cases. To
+                   validate these modifications, I’ve developed a proof of concept application for one of these use cases which
+                   was in the healthcare sector. Also, I presented the obtained results at a conference in Cluj-Napoca, Romania.
+  """
+  
+  [[experience]]
+    title = "Benchmarking Deep Learning Optimizers"
+    company = "Prof. Dr. Philipp Hennig"
+    company_url = "https://pn.is.tuebingen.mpg.de/person/phennig"
+    location = "Tübingen"
+    date_start = "2019-10-14"
+    date_end = "2019-12-14"
+    description = """Here, I’ve researched efficient state of the
+                     art Deep Learning Optimizers such as RAdam, AdamW or AMGSGrad and benchmarked them on different
+                     problem sets. The purpose of this research was to get a better performance understanding of different
+                     optimization algorithms on various problem sets and to provide a ranking based on the problem type.
+    """
 
 +++
