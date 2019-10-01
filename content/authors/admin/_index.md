@@ -14,8 +14,8 @@ role: Computer Science Master Student
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: Eberhard-Karls-University Tübingen
+  url: "https://uni-tuebingen.de/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include deep learning, reinforcement learning and generative models.
@@ -28,11 +28,11 @@ interests:
 
 education:
   courses:
-  - course: M.Sc.
+  - course: M.Sc. in Computer Science
     institution: Eberhard-Karls-University Tübingen
     year: 2020
   - course: B.Sc. in Computer Science
-    institution: DHBW Stuttgart
+    institution: DHBW Stuttgart Campus Horb
     year: 2018
 
 # Social/Academic Networking
@@ -56,7 +56,7 @@ social:
   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "robin.schmidt.98@web.de"
+email: "robin.schmidt.97@web.de"
   
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
@@ -65,6 +65,11 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a Computer Science master student at Eberhard-Karls-University in Tübingen focusing on artificial intelligence. Before that, I studied Computer Science in a dual setup at the University of Applied Sciences in Stuttgart which involved frequent and extended industry research and development projects on topics regarding manufacturing execution systems. The particular topics included work on single product tracking, improvement on data analysis as well as key performance indicators. 
+                                                                                                                                                                                                                                                                                                                          
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+During my masters degree I attended research internships such as the Extreme Blue internship at IBM, where I’ve researched the connection between Internet of Things and Master Data Management with great success This included use case research as well as looking into the
+                                                                                                                                                                                                                   current data model and proposing changes, which needed to be made to support the upcoming use cases. To
+                                                                                                                                                                                                                   validate these modifications, I’ve developed a proof of concept application for one of these use cases which
+                                                                                                                                                                                                                   was in the healthcare sector. Also, I presented the obtained results at a conference in Cluj-Napoca, Romania.
+                                                                 
