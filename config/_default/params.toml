@@ -90,7 +90,7 @@ phone = "+49 17623348219"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "Dätzinger Straße 110", city = "Grafenau", region = "Bade-Württemberg", postcode = "71120", country = "Germany", country_code = "DE"}
+address = {street = "Dätzinger Straße 110", city = "Grafenau", region = "Baden-Württemberg", postcode = "71120", country = "Germany", country_code = "DE"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
