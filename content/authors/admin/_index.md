@@ -46,7 +46,7 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/SirRob1997
-- icon: linked-in
+- icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/schmidt-robin/
 # Link to a PDF of your resume/CV from the About widget.
@@ -68,7 +68,7 @@ user_groups:
 I am a Computer Science master student at Eberhard-Karls-University in Tübingen focusing on artificial intelligence. Before that, I studied Computer Science in a dual setup at the University of Applied Sciences in Stuttgart which involved frequent and extended industry research and development projects on topics regarding manufacturing execution systems. The particular topics included work on _single product tracking_, _improvement on data analysis_ as well as _key performance indicators_. 
                                                                                                                                                                                                                                                                                                                           
 
-During my masters degree I attended research internships such as the Extreme Blue internship at IBM, where I’ve researched the _connection between Internet of Things and Master Data Management_ with great success This included use case research as well as looking into the
+During my masters degree I attended research internships such as the Extreme Blue internship at IBM, where I’ve researched the _connection between Internet of Things and Master Data Management_ with great success. This included use case research as well as looking into the
                                                                                                                                                                                                                    current data model and proposing changes, which needed to be made to support the upcoming use cases. To
                                                                                                                                                                                                                    validate these modifications, I’ve developed a proof of concept application for one of these use cases which
                                                                                                                                                                                                                    was in the healthcare sector. Also, I presented the obtained results at a conference in Cluj-Napoca, Romania.
