@@ -40,8 +40,8 @@ date_format = "Jan 2006"
   
   Topics include:
     
-    * Key Performance Indicators inside Manufacturing Execution Systems
-    * Improvement of the data analysis inside Manufacturing Execution Systems
+   * Key Performance Indicators inside Manufacturing Execution Systems
+   * Improvement of the data analysis inside Manufacturing Execution Systems
   """
   
 [[experience]]
