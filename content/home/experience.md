@@ -68,14 +68,14 @@ date_format = "Jan 2006"
                    was in the healthcare sector. Also, I presented the obtained results at a conference in Cluj-Napoca, Romania.
   """
   
-  [[experience]]
-    title = "Benchmarking Deep Learning Optimizers"
-    company = "Prof. Dr. Philipp Hennig"
-    company_url = "https://pn.is.tuebingen.mpg.de/person/phennig"
-    location = "Tübingen"
-    date_start = "2019-10-14"
-    date_end = "2019-12-14"
-    description = """Here, I’ve researched efficient state of the
+[[experience]]
+  title = "Benchmarking Deep Learning Optimizers"
+  company = "Prof. Dr. Philipp Hennig"
+  company_url = "https://pn.is.tuebingen.mpg.de/person/phennig"
+  location = "Tübingen"
+  date_start = "2019-10-14"
+  date_end = "2019-12-14"
+  description = """Here, I’ve researched efficient state of the
                      art Deep Learning Optimizers such as RAdam, AdamW or AMGSGrad and benchmarked them on different
                      problem sets. The purpose of this research was to get a better performance understanding of different
                      optimization algorithms on various problem sets and to provide a ranking based on the problem type.
