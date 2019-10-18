@@ -74,7 +74,7 @@ date_format = "Jan 2006"
   company_url = "https://pn.is.tuebingen.mpg.de/person/phennig"
   location = "Tübingen"
   date_start = "2019-10-14"
-  date_end = "2019-12-14"
+  date_end = "2020-02-14"
   description = """Here, I’ve researched efficient state of the
                      art Deep Learning Optimizers such as RAdam, AdamW or AMGSGrad and benchmarked them on different
                      problem sets. The purpose of this research was to get a better performance understanding of different
