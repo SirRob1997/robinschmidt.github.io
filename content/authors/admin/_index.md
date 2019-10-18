@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Robin Schmidt
+name: Robin M. Schmidt
 
 # Username (this should match the folder name)
 authors:
