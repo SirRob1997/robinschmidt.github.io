@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Explaining 'Large-Scale Distributed Second-Order Optimization Using Kronecker-Factored Approximate Curvature for Deep Convolutional Neural Networks'"
-subtitle: ""
-summary: ""
+title: "Distributed Second-Order Optimization Using Kronecker-Factored Approximate Curvature"
+subtitle: "Explaining the main contribution"
+summary: "A recent publication tried to parallelize K-FAC for multiple processes to speed up convergence. In this blog post I want to summarize the main contribution and give a little more insights"
 authors: ["Robin M. Schmidt"]
 tags: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
 categories: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
@@ -32,7 +32,7 @@ projects: []
 
 # Notation
 
-$\mathcal{L}(\boldsymbol{\theta} ; \mathcal{T})=\sum_{\left(\mathbf{x}_{i}, \mathbf{y}_{i}\right) \in \mathcal{T}} \ell\left(\hat{\mathbf{y}}_{i}, \mathbf{y}_{i}\right)$
+$$\mathcal{L}(\boldsymbol{\theta} ; \mathcal{T})=\sum_{\left(\mathbf{x}_{i}, \mathbf{y}_{i}\right) \in \mathcal{T}} \ell\left(\hat{\mathbf{y}}_{i}, \mathbf{y}_{i}\right)$$
 
 # Related Work
 
