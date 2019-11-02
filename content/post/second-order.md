@@ -1,15 +1,15 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Second Order"
+title: "Explaining "Large-Scale Distributed Second-Order Optimization Using Kronecker-Factored Approximate Curvature for Deep Convolutional Neural Networks" "
 subtitle: ""
 summary: ""
 authors: ["Robin M. Schmidt"]
 tags: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
-categories: []
+categories: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
 date: 2019-11-03T00:04:59+01:00
 lastmod: 2019-11-03T00:04:59+01:00
-featured: false
+featured: true
 draft: false
 
 # Featured image
