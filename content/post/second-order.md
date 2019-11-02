@@ -10,7 +10,7 @@ categories: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
 date: 2019-11-03T00:04:59+01:00
 lastmod: 2019-11-03T00:04:59+01:00
 featured: true
-draft: false
+draft: true
 markup: mmark
 
 # Featured image
@@ -61,7 +61,7 @@ The generalized *Gauss-Newton-Method*  and *Natural Gradient Descent* (NGD)  set
 
 $$\mathbf{F}_{\boldsymbol{\theta}} = \mathop{\mathbb{E}}_{p(\mathbf{x},\mathbf{y})}\left[\nabla \log p(\mathbf{y}|\mathbf{x};\boldsymbol{\theta}) \nabla \log p(\mathbf{y}|\mathbf{x};\boldsymbol{\theta})^T\right]$$
 
-For a neural network with $$L$$ Layers K-FAC approximates $$\mathbf{F}_{\boldsymbol{\theta}}$$ as displayed in Equation \ref{eq:approx} with $$\mathbf{F}_\ell$$ being the block matrix for the FIM of the $$\ell$$ th layer:
+For a neural network with $$L$$ Layers K-FAC approximates $$\mathbf{F}_{\boldsymbol{\theta}}$$ as displayed in the next Equation with $$\mathbf{F}_\ell$$ being the block matrix for the FIM of the $$\ell$$ th layer:
 
 $$\mathbf{F}_{\boldsymbol{\theta}} \approx \operatorname{diag}\left(\mathbf{F}_1, \mathbf{F}_2, \dots, \mathbf{F}_\ell, \dots \mathbf{F}_L \right)$$
 
@@ -89,4 +89,4 @@ Besides the problem of inverting infeasible large matrices such as the FIM or th
 
 
 
-[^1]: Kazuki  Osawa,  Yohei  Tsuji,  Yuichiro Ueno,  Akira Naruse,  Rio Yokota,  and Satoshi  Matsuoka.Large-scale  distributed second-order optimization using kronecker-factored approximate curvature for deep convolutional neural networks, 2018
+[^1]: Kazuki  Osawa,  Yohei  Tsuji,  Yuichiro Ueno,  Akira Naruse,  Rio Yokota,  and Satoshi  Matsuoka. Large-scale  distributed second-order optimization using kronecker-factored approximate curvature for deep convolutional neural networks, 2018
