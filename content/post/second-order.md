@@ -3,7 +3,7 @@
 
 title: "Distributed Second-Order Optimization Using Kronecker-Factored Approximate Curvature"
 subtitle: "Explaining the main contribution"
-summary: "A recent publication tried to parallelize K-FAC for multiple processes to speed up convergence. In this blog post I want to summarize the main contribution and give a little more insights"
+summary: "A recent publication tried to parallelize K-FAC for multiple processes to speed up convergence. In this blog post I want to summarize the main contribution and give a little more insights."
 authors: ["Robin M. Schmidt"]
 tags: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
 categories: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
@@ -11,6 +11,7 @@ date: 2019-11-03T00:04:59+01:00
 lastmod: 2019-11-03T00:04:59+01:00
 featured: true
 draft: false
+markup: mmark
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
