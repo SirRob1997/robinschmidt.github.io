@@ -31,7 +31,6 @@ projects: []
 
 # Introduction
 
-I have more [^1] to say.
 
 
 # Notation
@@ -47,11 +46,41 @@ For this process of finding a global or local minimum for convex and non-convex 
 
 # Related Work
 
+Related Work in the realm of Deep Learning Optimizers can broadly be classified in First- and Second-Order Optimization Algorithms. Here we want to give a quick overview over those two areas.
+
 ## First-Order Optimization Algorithms
 
+There are various First-Order Optimization Algorithms which are widely used in Deep Learning. One of the most popular choices due to its simplicity is still *Stochastic Gradient Descent* (SGD) with the update rule:
+
+$$\boldsymbol{\theta}^{(\tau)}=\boldsymbol{\theta}^{(\tau-1)}-\eta \cdot \nabla_{\boldsymbol{\theta}} \mathcal{L}\left(\boldsymbol{\theta}^{(\tau-1)} ;\left(\mathbf{x}_{i}, \mathbf{y}_{i}\right)\right)$$
+
+However, there have been recent advances yielding new and improved First-Order Optimizers such as *Adam*, *AdamW*, *AMSGrad*, *AdaBound*, *AMSBound*, *RAdam*, *LookAhead*, *Ranger* and many more which offer time-convergence improvements based on Adaptive Gradient methods and Momentum Terms.
 ## Second-Order Optimization Algorithms
 
+The generalized *Gauss-Newton-Method*  and *Natural Gradient Descent* (NGD)  set the groundwork for improvements on Second-Order Optimization Algorithms. Such work yielded the *Kronecker-factored Approximate Curvature* (K-FAC) which effeciently approximates the empirical Fisher information matrix (FIM) $$\mathbf{F}_{\boldsymbol{\theta}}$$ given in the next Equation through block-diagonalization and Kronecker factorization of these blocks:
+
+$$\mathbf{F}_{\boldsymbol{\theta}} = \mathop{\mathbb{E}}_{p(\mathbf{x},\mathbf{y})}\left[\nabla \log p(\mathbf{y}|\mathbf{x};\boldsymbol{\theta}) \nabla \log p(\mathbf{y}|\mathbf{x};\boldsymbol{\theta})^T\right]$$
+
+For a neural network with $$L$$ Layers K-FAC approximates $$\mathbf{F}_{\boldsymbol{\theta}}$$ as displayed in Equation \ref{eq:approx} with $$\mathbf{F}_\ell$$ being the block matrix for the FIM of the $$\ell$$ th layer:
+
+$$\mathbf{F}_{\boldsymbol{\theta}} \approx \operatorname{diag}\left(\mathbf{F}_1, \mathbf{F}_2, \dots, \mathbf{F}_\ell, \dots \mathbf{F}_L \right)$$
+
+Each block is then approximated using the Kronecker-factorization:
+
+$$\mathbf{F}_\ell \approx \mathbf{G}_\ell \otimes \mathbf{A}_{\ell-1}$$
+
+With the properties of the Kronecker-factorization we can write the blocks as:
+
+$$\mathcal{G}_\ell^{(\tau-1)} = \left({\mathbf{G}_\ell^{(\tau-1)}}^{-1} \otimes {\mathbf{A}_{\ell-1}^{(\tau-1)}}^{-1}\right)$$
+
+Now using the NGD update rule we get the update rule for the parameters $$\boldsymbol{\theta}_\ell^{(\tau)}$$:
+
+$$\boldsymbol{\theta}_\ell^{(\tau)} = \boldsymbol{\theta}_\ell^{(\tau-1)} - \eta \cdot \mathcal{G}_\ell^{(\tau-1)} \cdot \nabla \mathcal{L}_\ell\left(\boldsymbol{\theta}_\ell^{(\tau-1)};\cdot\right)$$
+
+Besides the problem of inverting infeasible large matrices such as the FIM or the Hessian, which K-FAC tries to solve, a common drawback for Second-order optimizers is the complexity to optimize them for distributed computing. This is where [^1] tries to contribute a method which will improve the state-of-the-art.
 # Parallelized K-FAC
+
+
 
 # Results
 
@@ -60,4 +89,4 @@ For this process of finding a global or local minimum for convex and non-convex 
 
 
 
-[^1]: Footnote example.
+[^1]: Kazuki  Osawa,  Yohei  Tsuji,  Yuichiro Ueno,  Akira Naruse,  Rio Yokota,  and Satoshi  Matsuoka.Large-scale  distributed second-order optimization using kronecker-factored approximate curvature for deep convolutional neural networks, 2018
