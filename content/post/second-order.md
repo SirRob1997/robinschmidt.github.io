@@ -31,6 +31,7 @@ projects: []
 
 # Introduction
 
+This blog post ommits some citations due to visualisation purposes, for a full list of references please refer to the {{% staticref "files/paper_large_scale.pdf" "newtab" %}}whitepaper version{{% /staticref %}} which was written for a seminar during my graduate studies.
 
 
 # Notation
