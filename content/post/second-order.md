@@ -10,7 +10,7 @@ categories: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
 date: 2019-11-03T00:04:59+01:00
 lastmod: 2019-11-03T00:04:59+01:00
 featured: true
-draft: false
+draft: true
 markup: mmark
 
 # Featured image
