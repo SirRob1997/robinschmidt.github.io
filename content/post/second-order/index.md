@@ -112,7 +112,7 @@ Their results show that the optimal amount of GPUs to use for their experimental
 
 {{< figure src="iteration_cost.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
 
-They are able to achieve a really competitive validation accuracy of $\geq 75\%$ using really large batch sizes (BS) which none other first-order optimization method is able to sustain. The respective training curves with their learning rates and batch sizes are shown in figure 5. If we compare the batch sizes for other first-order based methods on the same problem set we can see that the high validation accuracies ($$\sim76\%$$) achieved by those methods commonly use batch sizes $$\leq 32\text{K}$$.
+They are able to achieve a really competitive validation accuracy of $\geq 75\%$ using really large batch sizes (BS) which none other first-order optimization method is able to sustain. The respective training curves with their learning rates and batch sizes are shown in figure 6. If we compare the batch sizes for other first-order based methods on the same problem set we can see that the high validation accuracies ($$\sim76\%$$) achieved by those methods commonly use batch sizes $$\leq 32\text{K}$$.
 
 {{< figure src="accuracy.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
 
