@@ -10,7 +10,7 @@ categories: ["Optimization", "Second-Order", "K-FAC", "Parallelization"]
 date: 2019-11-03T00:04:59+01:00
 lastmod: 2019-11-03T00:04:59+01:00
 featured: true
-draft: true
+draft: false
 markup: mmark
 
 # Featured image
@@ -32,6 +32,8 @@ projects: []
 # Introduction
 
 This blog post ommits some citations due to visualisation purposes, for a full list of references please refer to the {{% staticref "files/paper_large_scale.pdf" "newtab" %}}whitepaper version{{% /staticref %}} which was written for a seminar during my graduate studies.
+
+With recent advances in machine learning the size of training data and the size of deep neural network models is heavily increasing which raises demand for better performing optimization algorithms. Common approaches are either improving the computational steps of the optimization algorithms or introducing parallel computing to speed up convergence. Using a fixed mini-batch size for each process in parallel computing causes the mini-batch size of the overall system to linearly scale with the number of processes. As the mini-batch size increases past a threshold the validation accuracy decreases. Other works tried to overcome this by varying the learning rate and batch size over epochs. Now, [^1] tries to tackle this large mini-batch problem with taking a more mathematically rigorous approach where they assume that large mini-batches become more statistically stable which introduces advantages for second-order optimization methods. 
 
 
 # Notation
@@ -79,7 +81,10 @@ Now using the NGD update rule we get the update rule for the parameters $$\bolds
 $$\boldsymbol{\theta}_\ell^{(\tau)} = \boldsymbol{\theta}_\ell^{(\tau-1)} - \eta \cdot \mathcal{G}_\ell^{(\tau-1)} \cdot \nabla \mathcal{L}_\ell\left(\boldsymbol{\theta}_\ell^{(\tau-1)};\cdot\right)$$
 
 Besides the problem of inverting infeasible large matrices such as the FIM or the Hessian, which K-FAC tries to solve, a common drawback for Second-order optimizers is the complexity to optimize them for distributed computing. This is where [^1] tries to contribute a method which will improve the state-of-the-art.
+
 # Parallelized K-FAC
+
+The design which gets proposed in [^1] is visualised in figure {{< figure src="steps.jpg" title="Different stages of distributed K-FAC" numbered="true" lightbox="true" >}}. Each stage corresponds to a needed step of computation, here representative with $$2$$ GPUs and a $$3$$ layer neural network. In the first two stages $$\mathbf{A_{\ell-1}}$$ and $$\mathbf{G}_\ell$$ get computed by forward and backward passing the input through the network. For that, each process uses different mini-batches to calculate the Kronecker factors. After that, the values of these factors get summed up to calculate the global factors and the results get distributed to the different processes (ReduceScatterV) to keep model-parallelism. The purpose of distributing the results to each process is so that every GPU can compute the preconditioned gradient $$\mathcal{G}_\ell$$ for a different layer $$\ell$$. If there are more layers than processes then one process computes multiple preconditioned gradients as shown in Stage $$3$$ of figure \ref{fig:steps}. Stage $$4$$ and Stage $$5$$ are respectively the inverse computation stage and the matrix multiplication stage. After stage $$5$$ we distribute each $$\mathcal{G}_\ell$$ to each process (AllGatherV) to reach stage $$6$$ where each process can now update the parameters $$\boldsymbol{\theta}$$ by using the preconditioned gradients. In [^1] they also use some methods to speed up communication, use damping for the FIM to make training more stable as well as learning rate schedules and momentum for K-FAC to speed up convergence. These methods are not explicitly explained here since they are not the main contribution of this work and have been applied in other settings as well.
 
 
 
