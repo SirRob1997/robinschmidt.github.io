@@ -82,15 +82,15 @@ $$\boldsymbol{\theta}_\ell^{(\tau)} = \boldsymbol{\theta}_\ell^{(\tau-1)} - \eta
 
 To get a more intuitive and visual approach to the FIM approximation as well as the Kronecker-product lets look at some visualisations. Figure 1 shows the Approximation of the FIM used in *K-FAC*. This shows that the FIM gets block-diagonalized with $$\mathbf{F}_\ell$$ being the block matrix for the FIM of layer $$\ell$$. In particular, the FIM of each layer consists of the weights for that specific layer. Each block gets then further approximated using the Kronecker-factorization.  
 
-{{< figure library="true" src="approximation.PNG" title=" Approximation of the FIM in K-FAC alternated from" numbered="true" lightbox="true" >}} 
+{{< figure src="approximation.PNG" title=" Approximation of the FIM in K-FAC alternated from" numbered="true" lightbox="true" >}} 
 
 The Kronecker-factorization is visually shown in figure 2 (taken from [^2]). When we assume a white space corresponds to $$0$$, a black space corresponds to $$1$$ and a grey space corresponds to any other value between $$0$$ and $$1$$ the resulting matrix has the shape of multiplying the dimenstions of the two Kronecker-factors. This can basically be thought of as arranging the product of matrix $$\mathbf{B}$$ with each cell of matrix $$\mathbf{A}$$ in a new matrix. Because matrix $$\mathbf{A}$$ has white diagonal elements the resulting matrix also has white block-diagonal elements. Black elements in matrix $$\mathbf{A}$$ result in matrix $$\mathbf{B}$$ being put in that position while grey elements yield new alternated entries.
 
-{{< figure library="true" src="kronecker.png" title="Kronecker Factorization visually explained" numbered="true" lightbox="true" >}} 
+{{< figure  src="kronecker.png" title="Kronecker Factorization visually explained" numbered="true" lightbox="true" >}} 
 
 If we now take a look at the approximation process for AlexNet in figure 3 which is a common architecture for image classification we can see the degree of computational improvement this approach offers. AlexNet has $$60,000,000$$ parameters which yields a Fisher information matrix with shape $$\mathbf{F}_{\boldsymbol{\theta}} \in \mathbb{R}^{60,000,000 \times 60,000,000}$$ which needs to be inverted in order to make one iteration in updating the parameters when using the *NGD* update rule. If we now take a look at the last block-approximated diagonal block which corresponds to the last AlexNet layer, we observe that it has the shape $$\mathbf{F}_\ell \in \mathbb{R}^{4,096,000 \times 4,096,000}$$ which can further be approximated by two smaller matrices where $$\mathbf{A}_{\ell - 1} \in \mathbb{R}^{4,096 \times 4,096}$$ is the input to layer $$\ell$$ and $$\mathbf{G}_\ell \in \mathbb{R}^{1,000 \times 1,000}$$ is the output of layer $$\ell$$. The fact that we don't need to invert those enormous matrices but these rather small matrices show how much computational improvement this approach actually offers. Using this approximation for the FIM is the main property which distinguishes *K-FAC* from *NGD* and without it *K-FAC* wouldn't perform much different from regular *NGD*.
 
-{{< figure library="true" src="approximation_example.png" title="Approximation Example of the FIM for AlexNet in K-FAC" numbered="true" lightbox="true" >}} 
+{{< figure src="approximation_example.png" title="Approximation Example of the FIM for AlexNet in K-FAC" numbered="true" lightbox="true" >}} 
 
 Besides the problem of inverting infeasible large matrices such as the FIM or the Hessian, which K-FAC tries to solve, a common drawback for Second-order optimizers is the complexity to optimize them for distributed computing. This is where Osawa et al. try to contribute a method which will improve the state-of-the-art.
 
@@ -98,7 +98,7 @@ Besides the problem of inverting infeasible large matrices such as the FIM or th
 
 The design which gets proposed by Osawa et al. is visualised in figure 4.
 
-{{< figure library="true" src="stages.PNG" title="Different stages of distributed K-FAC" numbered="true" lightbox="true" >}} 
+{{< figure src="stages.PNG" title="Different stages of distributed K-FAC" numbered="true" lightbox="true" >}} 
 
 Each stage corresponds to a needed step of computation, here representative with $$2$$ GPUs and a $$3$$ layer neural network. In the first two stages $$\mathbf{A_{\ell-1}}$$ and $$\mathbf{G}_\ell$$ get computed by forward and backward passing the input through the network. For that, each process uses different mini-batches to calculate the Kronecker factors. After that, the values of these factors get summed up to calculate the global factors and the results get distributed to the different processes (ReduceScatterV) to keep model-parallelism. The purpose of distributing the results to each process is so that every GPU can compute the preconditioned gradient $$\mathcal{G}_\ell$$ for a different layer $$\ell$$. If there are more layers than processes then one process computes multiple preconditioned gradients as shown in Stage $$3$$ of figure 4. Stage $$4$$ and Stage $$5$$ are respectively the inverse computation stage and the matrix multiplication stage. After stage $$5$$ we distribute each $$\mathcal{G}_\ell$$ to each process (AllGatherV) to reach stage $$6$$ where each process can now update the parameters $$\boldsymbol{\theta}$$ by using the preconditioned gradients. Osawa et al. also use some methods to speed up communication, use damping for the FIM to make training more stable as well as learning rate schedules and momentum for K-FAC to speed up convergence. These methods are not explicitly explained here since they are not the main contribution of this work and have been applied in other settings as well.
 
@@ -107,11 +107,11 @@ Each stage corresponds to a needed step of computation, here representative with
 
 Their results show that the optimal amount of GPUs to use for their experimental setup is $$64$$. After that, the overhead for communication becomes too large which causes a sharp increase in iteration cost.
 
-{{< figure library="true" src="iteration_cost.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
+{{< figure src="iteration_cost.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
 
 They are able to achieve a really competitive validation accuracy of $\geq 75\%$ using really large batch sizes (BS) which none other first-order optimization method is able to sustain. The respective training curves with their learning rates and batch sizes are shown in figure 5. If we compare the batch sizes for other first-order based methods on the same problem set we can see that the high validation accuracies ($$\sim76\%$$) achieved by those methods commonly use batch sizes $$\leq 32\text{K}$$.
 
-{{< figure library="true" src="accuracy.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
+{{< figure src="accuracy.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
 
 # Conclusion & Outlook
 
