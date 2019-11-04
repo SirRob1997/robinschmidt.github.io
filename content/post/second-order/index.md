@@ -14,7 +14,7 @@ draft: false
 markup: mmark
 commentable: true
 reading_time: true
-thumbnail: "thumbnail.jpg"
+thumbnail: "img/thumbnail.jpg"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
