@@ -80,20 +80,30 @@ Now using the NGD update rule we get the update rule for the parameters $$\bolds
 
 $$\boldsymbol{\theta}_\ell^{(\tau)} = \boldsymbol{\theta}_\ell^{(\tau-1)} - \eta \cdot \mathcal{G}_\ell^{(\tau-1)} \cdot \nabla \mathcal{L}_\ell\left(\boldsymbol{\theta}_\ell^{(\tau-1)};\cdot\right)$$
 
-Besides the problem of inverting infeasible large matrices such as the FIM or the Hessian, which K-FAC tries to solve, a common drawback for Second-order optimizers is the complexity to optimize them for distributed computing. This is where [^1] tries to contribute a method which will improve the state-of-the-art.
+Besides the problem of inverting infeasible large matrices such as the FIM or the Hessian, which K-FAC tries to solve, a common drawback for Second-order optimizers is the complexity to optimize them for distributed computing. This is where Osawa et al. try to contribute a method which will improve the state-of-the-art.
 
 # Parallelized K-FAC
 
-The design which gets proposed in [^1] is visualised in figure 1.
+The design which gets proposed by Osawa et al. is visualised in figure 1.
 
 {{< figure library="true" src="stages.PNG" title="Different stages of distributed K-FAC" numbered="true" lightbox="true" >}} 
 
-Each stage corresponds to a needed step of computation, here representative with $$2$$ GPUs and a $$3$$ layer neural network. In the first two stages $$\mathbf{A_{\ell-1}}$$ and $$\mathbf{G}_\ell$$ get computed by forward and backward passing the input through the network. For that, each process uses different mini-batches to calculate the Kronecker factors. After that, the values of these factors get summed up to calculate the global factors and the results get distributed to the different processes (ReduceScatterV) to keep model-parallelism. The purpose of distributing the results to each process is so that every GPU can compute the preconditioned gradient $$\mathcal{G}_\ell$$ for a different layer $$\ell$$. If there are more layers than processes then one process computes multiple preconditioned gradients as shown in Stage $$3$$ of figure \ref{fig:steps}. Stage $$4$$ and Stage $$5$$ are respectively the inverse computation stage and the matrix multiplication stage. After stage $$5$$ we distribute each $$\mathcal{G}_\ell$$ to each process (AllGatherV) to reach stage $$6$$ where each process can now update the parameters $$\boldsymbol{\theta}$$ by using the preconditioned gradients. In [^1] they also use some methods to speed up communication, use damping for the FIM to make training more stable as well as learning rate schedules and momentum for K-FAC to speed up convergence. These methods are not explicitly explained here since they are not the main contribution of this work and have been applied in other settings as well.
+Each stage corresponds to a needed step of computation, here representative with $$2$$ GPUs and a $$3$$ layer neural network. In the first two stages $$\mathbf{A_{\ell-1}}$$ and $$\mathbf{G}_\ell$$ get computed by forward and backward passing the input through the network. For that, each process uses different mini-batches to calculate the Kronecker factors. After that, the values of these factors get summed up to calculate the global factors and the results get distributed to the different processes (ReduceScatterV) to keep model-parallelism. The purpose of distributing the results to each process is so that every GPU can compute the preconditioned gradient $$\mathcal{G}_\ell$$ for a different layer $$\ell$$. If there are more layers than processes then one process computes multiple preconditioned gradients as shown in Stage $$3$$ of figure \ref{fig:steps}. Stage $$4$$ and Stage $$5$$ are respectively the inverse computation stage and the matrix multiplication stage. After stage $$5$$ we distribute each $$\mathcal{G}_\ell$$ to each process (AllGatherV) to reach stage $$6$$ where each process can now update the parameters $$\boldsymbol{\theta}$$ by using the preconditioned gradients. Osawa et al. also use some methods to speed up communication, use damping for the FIM to make training more stable as well as learning rate schedules and momentum for K-FAC to speed up convergence. These methods are not explicitly explained here since they are not the main contribution of this work and have been applied in other settings as well.
 
 
 # Results
 
+Their results show that the optimal amount of GPUs to use for their experimental setup is $$64$$. After that, the overhead for communication becomes too large which causes a sharp increase in iteration cost.
+
+{{< figure library="true" src="iteration_cost.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
+
+They are able to achieve a really competitive validation accuracy of $\geq 75\%$ using really large batch sizes (BS) which none other first-order optimization method is able to sustain. The respective training curves with their learning rates and batch sizes are shown in figure 3. If we compare the batch sizes for other first-order based methods on the same problem set we can see that the high validation accuracies ($$\sim76\%$$) achieved by those methods commonly use batch sizes $$\leq 32\text{K}$$
+
+{{< figure library="true" src="accuracy.PNG" title="Time per iteration of K-FAC on ResNet-50 using different amount of GPUs" numbered="true" lightbox="true" >}} 
+
 # Conclusion & Outlook
+
+Generally, with the obtained results Osawa et al. were able to show that parallelized second-order optimization algorithms do in fact generalize relatively similar to *SGD* approaches even for large mini-batch sizes. This is a result which is new in its entirety since first-order methods are thought of as having a large edge over second-order alternatives. However, their approach can still be improved by improving the communication complexity as well as approximating the Kronecker-factors without loss of accuracy. For further improvements they mention that each speed-up method for *SGD* which they applied to their approach improved convergence similar to the effect it has on *SGD*. This property opens up the field for further improvements on second-order optimization algorithms by the possibility of further applying already known speed-up techniques for first-order methods.
 
 
 
