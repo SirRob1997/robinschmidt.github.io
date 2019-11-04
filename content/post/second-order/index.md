@@ -12,6 +12,7 @@ lastmod: 2019-11-03T00:04:59+01:00
 featured: true
 draft: false
 markup: mmark
+commentable: true
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
