@@ -18,8 +18,8 @@ markup: mmark
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
-  focal_point: "Left"
-  preview_only: true
+  focal_point: ""
+  preview_only: false
 
 # Projects (optional).
 #   Associate this post with one or more of your projects.
@@ -31,7 +31,7 @@ projects: []
 
 # Introduction
 
-This blog post ommits some citations due to visualisation purposes, for a full list of references please refer to the {{% staticref "files/paper_large_scale.pdf" "newtab" %}}whitepaper version{{% /staticref %}} which was written for a seminar during my graduate studies. There is also a {{% staticref "files/paper_large_scale.pdf" "newtab" %}}presentation{{% /staticref %}} coming soon.
+This blog post ommits some citations due to visualisation purposes, for a full list of references please refer to the {{% staticref "second-order.pdf" "newtab" %}}whitepaper version{{% /staticref %}} which was written for a seminar during my graduate studies. There is also a {{% staticref "second-order.pdf" "newtab" %}}presentation{{% /staticref %}} coming soon.
 
 With recent advances in machine learning the size of training data and the size of deep neural network models is heavily increasing which raises demand for better performing optimization algorithms. Common approaches are either improving the computational steps of the optimization algorithms or introducing parallel computing to speed up convergence. Using a fixed mini-batch size for each process in parallel computing causes the mini-batch size of the overall system to linearly scale with the number of processes. As the mini-batch size increases past a threshold the validation accuracy decreases. Other works tried to overcome this by varying the learning rate and batch size over epochs. Now, [^1] tries to tackle this large mini-batch problem with taking a more mathematically rigorous approach where they assume that large mini-batches become more statistically stable which introduces advantages for second-order optimization methods. In this blog post I want to summarize the main contribution while also giving a little more background information on some parts to get a better understanding of the topic.
 
