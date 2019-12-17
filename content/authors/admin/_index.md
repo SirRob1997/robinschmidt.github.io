@@ -18,7 +18,7 @@ organizations:
   url: "https://uni-tuebingen.de/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include deep learning, reinforcement learning and generative models.
+bio: My research interests include deep learning, reinforcement learning and optimization.
 
 interests:
 - Artificial Intelligence
@@ -49,6 +49,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/schmidt-robin/
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.de/citations?user=20vb63kAAAAJ&hl=de
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 - icon: cv
