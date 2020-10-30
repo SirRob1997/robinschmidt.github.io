@@ -60,12 +60,12 @@ date_format = "Jan 2006"
   
 [[experience]]
   title = "Research on Benchmarking Deep Learning Optimizers"
-  company = "Prof. Dr. Philipp Hennig"
-  company_url = "https://pn.is.tuebingen.mpg.de/person/phennig"
+  company = "Max Planck Institute for Intelligent Systems (MPI-IS)"
+  company_url = "https://www.is.mpg.de/de"
   location = "Tübingen"
   date_start = "2019-10-14"
   date_end = "2020-05-01"
-  description = """
+  description = """ Working in the group of [Prof. Dr. Philipp Hennig](https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/personen/philipp-hennig/):
 * Benchmarked and compared state-of-the-art Deep Learning optimizers and configurations
 * Solved the problem of missing reference points for new optimization algorithms
 * Enabled DeepOBS as a competitive benchmarking suite by creating new optimization baselines
@@ -80,6 +80,7 @@ date_format = "Jan 2006"
   date_start = "2020-08-01"
   date_end = ""
   description = """ Working in the group of [Prof. Dr. Zeynep Akata](https://eml-unitue.de/people/zeynep-akata):
+  
 *  Thesis Topic: Explainable Domain Generalization
 * Developed Self-Challenging Activation Maps for Domain Generalization
 * Supervised by Dr. Massimiliano Mancini, Prof. Dr. Zeynep Akata, and Prof. Dr. Philipp Hennig.
