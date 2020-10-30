@@ -24,10 +24,7 @@ date_format = "Jan 2006"
   location = "Horb"
   date_start = "2017-10-01"
   date_end = "2018-06-11"
-  description = """ Some of the activities include:
-  
-  * Compared state-of-the-art NewSQL databases on the categories of the business readiness rating
-  * Provided heuristics for the appropriate NewSQL database selection
+  description = """
   """
 
 [[experience]]
@@ -37,12 +34,7 @@ date_format = "Jan 2006"
   location = "Böblingen"
   date_start = "2015-10-01"
   date_end = "2018-10-31"
-  description = """ Some of the activities include:
-  
-  * Quantified and implemented more effective key performance indicators for better performance insights
-  * Conceptualized and developed a highly cost-efficient single product tracking system
-  * Took the initiative to solve data collection problems on-premise in the USA regarding the available sensor data
-  * Published three papers on these topics under a non-disclosure agreement
+  description = """
   """
   
 [[experience]]
@@ -52,13 +44,7 @@ date_format = "Jan 2006"
   location = "Böblingen"
   date_start = "2019-08-05"
   date_end = "2019-10-11"
-  description = """ Working with [Martin Oberhofer](https://www.linkedin.com/in/martin-oberhofer-9444382/):
-  
-  * Led a team of interns on research for master data management with internet of things use cases
-  * Developed more effective instance-level product master data representations through a RESTful API
-  * Developed a graph-based visualization based on React.js for a prototype in the healthcare sector
-  * Worked closely with offering management in the U.S. to deploy the new features
-  * Presented the results during internal and external events, conferences, or exhibitions
+  description = """
   """
   
 [[experience]]
@@ -68,12 +54,7 @@ date_format = "Jan 2006"
   location = "Tübingen"
   date_start = "2019-10-14"
   date_end = "2020-05-01"
-  description = """ Working in the group of [Prof. Dr. Philipp Hennig](https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/methoden-des-maschinellen-lernens/personen/philipp-hennig/):
-  
-* Benchmarked and compared state-of-the-art Deep Learning optimizers and configurations
-* Solved the problem of missing reference points for new optimization algorithms
-* Enabled DeepOBS as a competitive benchmarking suite by creating new optimization baselines
-* Featured in Andrew Ng’s [“The Batch”](https://blog.deeplearning.ai/blog/the-batch-data-for-defense-predicting-credit-approvals-more-learning-from-fewer-labels-hunting-for-planets)
+  description = """
     """
 
 [[experience]]
@@ -83,11 +64,7 @@ date_format = "Jan 2006"
   location = "Tübingen"
   date_start = "2020-08-01"
   date_end = ""
-  description = """ Working in the group of [Prof. Dr. Zeynep Akata](https://eml-unitue.de/people/zeynep-akata):
-  
-  
-*  Thesis Topic: Explainable Domain Generalization
-* Developed Self-Challenging Activation Maps for Domain Generalization
+  description = """
     """
 	
 	
