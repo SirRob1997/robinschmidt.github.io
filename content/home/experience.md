@@ -17,6 +17,7 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
+
 [[experience]]
   title = "Research on New SQL Databases"
   company = "Prof. Dr.-Ing. Olaf Herden"
@@ -85,10 +86,9 @@ date_format = "Jan 2006"
   date_end = "2021-02-29"
   description = """ Some of the activities include:
   
-*  Thesis Topic: Explainable Domain Generalization
+* Thesis Topic: Explainable Domain Generalization
 * Developed Self-Challenging Activation Maps for Domain Generalization
 * Supervised by Dr. Massimiliano Mancini, Prof. Dr. Zeynep Akata, and Prof. Dr. Philipp Hennig.
     """
-	
 	
 +++
