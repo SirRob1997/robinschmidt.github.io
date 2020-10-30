@@ -24,8 +24,6 @@ date_format = "Jan 2006"
   location = "Horb"
   date_start = "2017-10-01"
   date_end = "2018-06-11"
-  description = """
-  """
 
 [[experience]]
   title = "Research & Development Engineer (Co-op)"
@@ -34,8 +32,6 @@ date_format = "Jan 2006"
   location = "Böblingen"
   date_start = "2015-10-01"
   date_end = "2018-10-31"
-  description = """
-  """
   
 [[experience]]
   title = "Extreme Blue Internship"
@@ -44,8 +40,6 @@ date_format = "Jan 2006"
   location = "Böblingen"
   date_start = "2019-08-05"
   date_end = "2019-10-11"
-  description = """
-  """
   
 [[experience]]
   title = "Research on Benchmarking Deep Learning Optimizers"
@@ -54,8 +48,6 @@ date_format = "Jan 2006"
   location = "Tübingen"
   date_start = "2019-10-14"
   date_end = "2020-05-01"
-  description = """
-    """
 
 [[experience]]
   title = "Master Thesis on Explainable Domain Generalization"
@@ -64,8 +56,6 @@ date_format = "Jan 2006"
   location = "Tübingen"
   date_start = "2020-08-01"
   date_end = ""
-  description = """
-    """
 	
 	
 +++
