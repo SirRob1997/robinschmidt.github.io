@@ -17,7 +17,6 @@ date_format = "Jan 2006"
 #   Required fields are `title`, `company`, and `date_start`.
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
-
 [[experience]]
   title = "Research on New SQL Databases"
   company = "Prof. Dr.-Ing. Olaf Herden"
@@ -31,13 +30,13 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Research and Development Engineer (Co-op)"
+  title = "Research & Development Engineer (Co-op)"
   company = "Eisenmann SE"
   company_url = "https://www.eisenmann.com/de.html"
   location = "Böblingen"
   date_start = "2015-10-01"
   date_end = "2018-10-31"
-  description = """
+  description = """ 
   * Quantified and implemented more effective key performance indicators for better performance insights
   * Conceptualized and developed a highly cost-efficient single product tracking system
   * Took the initiative to solve data collection problems on-premise in the USA regarding the available sensor data
@@ -66,7 +65,7 @@ date_format = "Jan 2006"
   location = "Tübingen"
   date_start = "2019-10-14"
   date_end = "2020-05-01"
-  description = """ 
+  description = """
 * Benchmarked and compared state-of-the-art Deep Learning optimizers and configurations
 * Solved the problem of missing reference points for new optimization algorithms
 * Enabled DeepOBS as a competitive benchmarking suite by creating new optimization baselines
@@ -78,12 +77,13 @@ date_format = "Jan 2006"
   company = "Prof. Dr. Zeynep Akata"
   company_url = "https://eml-unitue.de/people/zeynep-akata"
   location = "Tübingen"
-  date_start = "2020-08-01"
-  date_end = "2021-02-29"
+  date_start = "2019-08-01"
+  date_end = "2020-02-29"
   description = """
-* Thesis Topic: Explainable Domain Generalization
+*  Thesis Topic: Explainable Domain Generalization
 * Developed Self-Challenging Activation Maps for Domain Generalization
 * Supervised by Dr. Massimiliano Mancini, Prof. Dr. Zeynep Akata, and Prof. Dr. Philipp Hennig.
     """
+	
 	
 +++
