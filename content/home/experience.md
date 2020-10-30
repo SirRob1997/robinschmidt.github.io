@@ -24,7 +24,8 @@ date_format = "Jan 2006"
   location = "Horb"
   date_start = "2017-10-01"
   date_end = "2018-06-11"
-  description = """ Some of the activities include: 
+  description = """ Some of the activities include:
+  
   * Compared state-of-the-art NewSQL databases on the categories of the business readiness rating
   * Provided heuristics for the appropriate NewSQL database selection
   """
@@ -36,7 +37,8 @@ date_format = "Jan 2006"
   location = "Böblingen"
   date_start = "2015-10-01"
   date_end = "2018-10-31"
-  description = """ Some of the activities include: 
+  description = """ Some of the activities include:
+  
   * Quantified and implemented more effective key performance indicators for better performance insights
   * Conceptualized and developed a highly cost-efficient single product tracking system
   * Took the initiative to solve data collection problems on-premise in the USA regarding the available sensor data
@@ -51,6 +53,7 @@ date_format = "Jan 2006"
   date_start = "2019-08-05"
   date_end = "2019-10-11"
   description = """ Some of the activities include: 
+  
   * Led a team of interns on research for master data management with internet of things use cases
   * Developed more effective instance-level product master data representations through a RESTful API
   * Developed a graph-based visualization based on React.js for a prototype in the healthcare sector
@@ -66,6 +69,7 @@ date_format = "Jan 2006"
   date_start = "2019-10-14"
   date_end = "2020-05-01"
   description = """ Some of the activities include: 
+  
 * Benchmarked and compared state-of-the-art Deep Learning optimizers and configurations
 * Solved the problem of missing reference points for new optimization algorithms
 * Enabled DeepOBS as a competitive benchmarking suite by creating new optimization baselines
@@ -79,7 +83,8 @@ date_format = "Jan 2006"
   location = "Tübingen"
   date_start = "2020-08-01"
   date_end = "2021-02-29"
-  description = """ Some of the activities include: 
+  description = """ Some of the activities include:
+  
 *  Thesis Topic: Explainable Domain Generalization
 * Developed Self-Challenging Activation Maps for Domain Generalization
 * Supervised by Dr. Massimiliano Mancini, Prof. Dr. Zeynep Akata, and Prof. Dr. Philipp Hennig.
