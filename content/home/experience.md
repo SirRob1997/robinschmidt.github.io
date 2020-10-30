@@ -77,8 +77,8 @@ date_format = "Jan 2006"
   company = "Prof. Dr. Zeynep Akata"
   company_url = "https://eml-unitue.de/people/zeynep-akata"
   location = "Tübingen"
-  date_start = "2019-08-01"
-  date_end = "2020-02-29"
+  date_start = "2020-08-01"
+  date_end = "2021-02-29"
   description = """ Some of the activities include: 
 *  Thesis Topic: Explainable Domain Generalization
 * Developed Self-Challenging Activation Maps for Domain Generalization
