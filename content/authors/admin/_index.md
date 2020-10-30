@@ -18,13 +18,13 @@ organizations:
   url: "https://uni-tuebingen.de/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include deep learning, reinforcement learning and optimization.
+bio: My research interests include deep learning and optimization.
 
 interests:
-- Artificial Intelligence
 - Deep Learning
-- Reinforcement Learning
 - Optimization
+- Domain Generalization
+
 
 education:
   courses:
@@ -68,8 +68,8 @@ user_groups:
 - Visitors
 ---
 
-I am a graduate student in computer science at [Eberhard-Karls-University](https://uni-tuebingen.de/) in Tübingen focusing on *Artificial Intelligence*. Before that, I studied computer science in a dual setup at the [University of Applied Sciences](https://www.dhbw-stuttgart.de/home/) in Stuttgart which involved frequent and extended industry research and development projects on topics regarding *Manufacturing Execution Systems*. The particular topics included work on *Single Product Tracking*, _Improvement on Data Analysis_ as well as _Key Performance Indicators_. During that time I've also done research with [Olaf Herden](https://expertenservice.dhbw-stuttgart.de/experteninnen-technik/informatik/olaf-herden/) on *NewSQL databases for modern Application Scenarios*.
-                                                                                                                                                                                                                                                                                                                          
+I am a graduate student in computer science at [Eberhard-Karls-University](https://uni-tuebingen.de/) in Tübingen focusing on *Deep Learning* and currently working on *Explainable Domain Generalization* with [Zeynep Akata](https://eml-unitue.de/people/zeynep-akata) and [Massimiliano Mancini](https://eml-unitue.de/people/massimiliano-mancini). Previously, I've been working on *Deep Learning Optimizers* with [Philipp Hennig](https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/methods-of-machine-learning/personen/philipp-hennig/) and [Frank Schneider](https://fsschneider.netlify.com/). I've also been an [Extreme Blue intern](https://www.ibm.com/employment/extremeblue/) at IBM.
 
-During my masters degree I attended internships such as the [Extreme Blue internship](https://www.ibm.com/employment/extremeblue/) at IBM, where I’ve researched the _Connection between Internet of Things and Master Data Management_. Also, I presented the obtained results at a conference in Cluj-Napoca, Romania. Currently I'm doing research on *Deep Learning Optimizers* with [Philipp Hennig](https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/methods-of-machine-learning/personen/philipp-hennig/) and [Frank Schneider](https://fsschneider.netlify.com/).
+For my bachelors, I studied computer science in a dual setup at the [University of Applied Sciences](https://www.dhbw-stuttgart.de/home/) in Stuttgart which involved frequent and extended industry research and development projects on topics regarding *Manufacturing Execution Systems*.
+                                                                                                                                                                                                                                                             
                                                                  
