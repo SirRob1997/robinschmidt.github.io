@@ -74,12 +74,12 @@ date_format = "Jan 2006"
 
 [[experience]]
   title = "Master Thesis on Explainable Domain Generalization"
-  company = "Prof. Dr. Zeynep Akata"
-  company_url = "https://eml-unitue.de/people/zeynep-akata"
+  company = "Max Planck Institute for Informatics (MPI-INF)"
+  company_url = "https://www.mpi-inf.mpg.de/de/departments/computer-vision-and-machine-learning"
   location = "Tübingen"
-  date_start = "2019-08-01"
-  date_end = "2020-02-29"
-  description = """
+  date_start = "2020-08-01"
+  date_end = ""
+  description = """ Working in the group of [Prof. Dr. Zeynep Akata](https://eml-unitue.de/people/zeynep-akata):
 *  Thesis Topic: Explainable Domain Generalization
 * Developed Self-Challenging Activation Maps for Domain Generalization
 * Supervised by Dr. Massimiliano Mancini, Prof. Dr. Zeynep Akata, and Prof. Dr. Philipp Hennig.
