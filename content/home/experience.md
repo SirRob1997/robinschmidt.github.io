@@ -24,48 +24,38 @@ date_format = "Jan 2006"
   location = "Horb"
   date_start = "2017-10-01"
   date_end = "2018-06-11"
-  description = """With Prof. Dr.-Ing. Olaf Herden, I did research on the topic of New SQL databases
-                 and evaluated different Open Source New SQL databases in terms of modern application scenarios. For
-                 that, I’ve used a model for evaluating Open Source software called the Business Readiness Rating which
-                 favored VoltDB"""
+  description = """
+  * Compared state-of-the-art NewSQL databases on the categories of the business readiness rating
+  * Provided heuristics for the appropriate NewSQL database selection
+  """
 
 [[experience]]
-  title = "Cooperative Studies in a dual setup"
+  title = "Research & Development Engineer (Co-op)"
   company = "Eisenmann SE"
   company_url = "https://www.eisenmann.com/de.html"
   location = "Böblingen"
   date_start = "2015-10-01"
   date_end = "2018-10-31"
-  description = """ Frequent and extended industry research & development projects during term breaks. This is approximately equivalent to 5 internships each with a duration of 3-4 months.
-  
-  Some of them yielded whitepapers with the topics:
-    
-   * Key Performance Indicators inside Manufacturing Execution Systems
-   * Improvement of the data analysis inside Manufacturing Execution Systems
-  """
-  
-[[experience]]
-  title = "Bachelor thesis"
-  company = "ENisco GmbH & Co. KG"
-  company_url = "http://www.enisco.de/"
-  location = "Böblingen"
-  date_start = "2018-06-12"
-  date_end = "2018-09-03"
-  description = """I did my bachelor thesis in subsidiary of Eisenmann SE on the topic "Conception and implementation of a single product tracking in a press-hardening production line". My supervisor was Prof. Dr. phil. Antonius J.M. van Hoof
+  description = """ 
+  * Quantified and implemented more effective key performance indicators for better performance insights
+  * Conceptualized and developed a highly cost-efficient single product tracking system
+  * Took the initiative to solve data collection problems on-premise in the USA regarding the available sensor data
+  * Published three papers on these topics under a non-disclosure agreement
   """
   
 [[experience]]
   title = "Extreme Blue Internship"
-  company = "IBM"
+  company = "IBM Research"
   company_url = "https://www.ibm.com/de-de"
   location = "Böblingen"
   date_start = "2019-08-05"
   date_end = "2019-10-11"
-  description = """Here, I’ve researched the connection between Internet of Things
-                   and Master Data Management with great success. This included use case research as well as looking into the
-                   current data model and proposing changes, which needed to be made to support the upcoming use cases. To
-                   validate these modifications, I’ve developed a proof of concept application for one of these use cases which
-                   was in the healthcare sector. Also, I presented the obtained results at a conference in Cluj-Napoca, Romania.
+  description = """
+  * Led a team of interns on research for master data management with internet of things use cases
+  * Developed more effective instance-level product master data representations through a RESTful API
+  * Developed a graph-based visualization based on React.js for a prototype in the healthcare sector
+  * Worked closely with offering management in the U.S. to deploy the new features
+  * Presented the results during internal and external events, conferences, or exhibitions
   """
   
 [[experience]]
@@ -74,11 +64,26 @@ date_format = "Jan 2006"
   company_url = "https://pn.is.tuebingen.mpg.de/person/phennig"
   location = "Tübingen"
   date_start = "2019-10-14"
-  date_end = "2020-02-14"
-  description = """Here, I’ve researched efficient state of the
-                     art Deep Learning Optimizers such as RAdam, AdamW or AMSGrad and benchmarked them on different
-                     problem sets. The purpose of this research was to get a better performance understanding of different
-                     optimization algorithms on various problem sets and to provide a ranking based on the problem type.
+  date_end = "2020-05-01"
+  description = """
+* Benchmarked and compared state-of-the-art Deep Learning optimizers and configurations
+* Solved the problem of missing reference points for new optimization algorithms
+* Enabled DeepOBS as a competitive benchmarking suite by creating new optimization baselines
+* Featured in Andrew Ng’s [“The Batch”](https://blog.deeplearning.ai/blog/the-batch-data-for-defense-predicting-credit-approvals-more-learning-from-fewer-labels-hunting-for-planets)
     """
 
+[[experience]]
+  title = "Master Thesis on Explainable Domain Generalization"
+  company = "Prof. Dr. Zeynep Akata"
+  company_url = "https://eml-unitue.de/people/zeynep-akata"
+  location = "Tübingen"
+  date_start = "2019-08-01"
+  date_end = "2020-02-29"
+  description = """
+*  Thesis Topic: Explainable Domain Generalization
+* Developed Self-Challenging Activation Maps for Domain Generalization
+* Supervised by Dr. Massimiliano Mancini, Prof. Dr. Zeynep Akata, and Prof. Dr. Philipp Hennig.
+    """
+	
+	
 +++
