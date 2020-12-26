@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Computer Science Graduate Student
+role: Research Scientist
 
 # Organizations/Affiliations
 organizations:
@@ -30,7 +30,7 @@ education:
   courses:
   - course: M.Sc. in Computer Science
     institution: Eberhard-Karls-University Tübingen
-    year: 2020
+    year: 2021
   - course: B.Sc. in Computer Science
     institution: DHBW Stuttgart Campus Horb
     year: 2018
@@ -42,7 +42,7 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:robin.schmidt.97@web.de".
+  link: mailto:robin.schmidt.97@web.de
 - icon: github
   icon_pack: fab
   link: https://github.com/SirRob1997
