@@ -16,6 +16,8 @@ role: Research Scientist
 organizations:
 - name: Eberhard-Karls-University Tübingen
   url: "https://uni-tuebingen.de/"
+- name: Max Planck Institute for Informatics
+  url: "https://www.mpi-inf.mpg.de/de/departments/computer-vision-and-machine-learning"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include deep learning and optimization.
