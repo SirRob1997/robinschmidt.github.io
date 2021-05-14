@@ -1,6 +1,6 @@
 +++
 # Recent Publications widget.
-widget = "pages"
+widget = "publication"
 active = true
 date = 2019-02-01T00:00:00
 
