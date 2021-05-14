@@ -1,37 +1,40 @@
 +++
-# Recent Publications widget.
-widget = "publication"
-active = true
-date = 2019-02-01T00:00:00
+# A Recent Publications section created with the Pages widget.
+# This section displays recent blog posts from `content/publication/`.
+
+widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
+active = true  # Activate this widget? true/false
+weight = 50  # Order that this section will appear.
 
 title = "All Publications"
 subtitle = ""
 
-# Order that this section will appear in.
-weight = 30
+[content]
+  # Page type to display. E.g. post, talk, or publication.
+  page_type = "publication"
+  
+  # Choose how much pages you would like to display (0 = all pages)
+  count = 100
+  
+  # Choose how many pages you would like to offset by
+  offset = 0
 
-# Number of publications to list.
-count = 100
-
-# List format.
-#   0 = Simple
-#   1 = Detailed
-#   2 = APA
-#   3 = MLA
-#   4 = Stream
-list_format = 4
-
-# Filter by publication type.
-# -1: Any
-#  0: Uncategorized
-#  1: Conference proceedings
-#  2: Journal
-#  3: Work in progress
-#  4: Technical report
-#  5: Book
-#  6: Book chapter
-publication_type = "-1"
-
-# Exclude publications that are shown in the Featured Publications widget?
-exclude_featured = false
+  # Page order. Descending (desc) or ascending (asc) date.
+  order = "desc"
+  
+[design]
+  # Toggle between the various page layout types.
+  #   1 = List
+  #   2 = Compact
+  #   3 = Card
+  #   4 = Citation (publication only)
+  view = 2
+  
+[advanced]
+ # Custom CSS. 
+ css_style = ""
+ 
+ # CSS class.
+ css_class = ""
 +++
