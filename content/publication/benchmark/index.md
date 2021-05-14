@@ -1,5 +1,5 @@
 +++
-title = "Descending through a Crowded Valley - Benchmarking Deep Learning Optimizers"
+title = "Descending through a Crowded Valley — Benchmarking Deep Learning Optimizers"
 date = 2020-07-01T00:00:00
 draft = false
 
@@ -18,7 +18,7 @@ authors = ["Robin M. Schmidt", "Frank Schneider", "Philipp Hennig"]
 publication_types = ["1"]
 
 # Publication name and optional abbreviated version.
-publication = "In *International Conference on Machine Learning (ICML) 2021*."
+publication = "In *International Conference on Machine Learning, ICML 2021*."
 publication_short = "In *ICML*"
 
 # Abstract and optional shortened version.
