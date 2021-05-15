@@ -1,10 +1,10 @@
 +++
-title = "Recurrent Neural Networks (RNNs): A gentle Introduction and Overview"
-date = 2019-11-01T00:00:00
+title = "Collaborative Filtering under Model Uncertainty"
+date = 2020-08-01T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Robin M. Schmidt"]
+authors = ["Robin M. Schmidt", "Moritz Hahn"]
 
 # Publication type.
 # Legend:
@@ -22,8 +22,8 @@ publication_types = ["0"]
 #publication_short = "In *ICML*"
 
 # Abstract and optional shortened version.
-abstract = "State-of-the-art solutions in the areas of "Language Modelling & Generating Text", "Speech Recognition", "Generating Image Descriptions" or "Video Tagging" have been using Recurrent Neural Networks as the foundation for their approaches. Understanding the underlying concepts is therefore of tremendous importance if we want to keep up with recent or upcoming publications in those areas. In this work we give a short overview over some of the most important concepts in the realm of Recurrent Neural Networks which enables readers to easily understand the fundamentals such as but not limited to "Backpropagation through Time" or "Long Short-Term Memory Units" as well as some of the more recent advances like the "Attention Mechanism" or "Pointer Networks". We also give recommendations for further reading regarding more complex topics where it is necessary."
-abstract_short = "We give a concise introduction to RNNs and related concepts."
+abstract = "In their work, Dean, Rich, and Recht create a model to research recourse and availability of items in a recommender system. We used the definition of predictive multiplicity by Marx, Pin Calmon, and Ustun to examine different variations of this model, using different values for two model parameters. Pairwise comparison of their models show, that most of these models produce very similar results in terms of discrepancy and ambiguity for the availability and only in some cases the availability sets differ significantly."
+abstract_short = "We investigate recommender systems under predictive multiplicity and show that they produce similar results for discrepancy and ambiguity."
 
 # Is this a featured publication? (true/false)
 featured = true
@@ -41,8 +41,8 @@ featured = true
 tags = []
 
 # Links (optional).
-url_pdf = "https://arxiv.org/pdf/1912.05911.pdf"
-url_preprint = "https://arxiv.org/abs/1912.05911"
+url_pdf = "https://arxiv.org/pdf/2008.10117.pdf"
+url_preprint = "https://arxiv.org/abs/2008.10117"
 #url_code = ""
 #url_dataset = "#"
 #url_project = "#"
