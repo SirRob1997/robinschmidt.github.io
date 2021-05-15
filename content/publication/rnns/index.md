@@ -22,8 +22,8 @@ publication_types = ["0"]
 #publication_short = "In *ICML*"
 
 # Abstract and optional shortened version.
-abstract = "Traditionally, for most machine learning settings, gaining some degree of explainability that tries to give users more insights into how and why the network arrives at its predictions, restricts the underlying model and hinders performance to a certain degree. For example, decision trees are thought of as being more explainable than deep neural networks but they lack performance on visual tasks. In this work, we empirically demonstrate that applying methods and architectures from the explainability literature can, in fact, achieve state-of-the-art performance for the challenging task of domain generalization while offering a framework for more insights into the prediction and training process. For that, we develop a set of novel algorithms including DivCAM, an approach where the network receives guidance during training via gradient based class activation maps to focus on a diverse set of discriminative features, as well as ProDrop and D-Transformers which apply prototypical networks to the domain generalization task, either with self-challenging or attention alignment. Since these methods offer competitive performance on top of explainability, we argue that the proposed methods can be used as a tool to improve the robustness of deep neural network architectures."
-abstract_short = "We present multiple methods for Domain Generalization based on some recent trends in the explainability literature."
+abstract = "State-of-the-art solutions in the areas of ``Language Modelling & Generating Text'', ``Speech Recognition'', ``Generating Image Descriptions'' or ``Video Tagging'' have been using Recurrent Neural Networks as the foundation for their approaches. Understanding the underlying concepts is therefore of tremendous importance if we want to keep up with recent or upcoming publications in those areas. In this work we give a short overview over some of the most important concepts in the realm of Recurrent Neural Networks which enables readers to easily understand the fundamentals such as but not limited to ``Backpropagation through Time'' or ``Long Short-Term Memory Units'' as well as some of the more recent advances like the ``Attention Mechanism'' or ``Pointer Networks''. We also give recommendations for further reading regarding more complex topics where it is necessary."
+abstract_short = "We give a concise introduction to RNNs and related topics."
 
 # Is this a featured publication? (true/false)
 featured = true
@@ -41,8 +41,8 @@ featured = true
 tags = []
 
 # Links (optional).
-url_pdf = "https://arxiv.org/pdf/2104.01742.pdf"
-url_preprint = "https://arxiv.org/abs/2104.01742"
+url_pdf = "https://arxiv.org/pdf/1912.05911.pdf"
+url_preprint = "https://arxiv.org/abs/1912.05911"
 #url_code = ""
 #url_dataset = "#"
 #url_project = "#"
