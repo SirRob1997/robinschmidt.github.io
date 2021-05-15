@@ -1,6 +1,6 @@
 +++
-title = "Explainability-aided Domain Generalization for Image Classification"
-date = 2021-03-01T00:00:00
+title = "Recurrent Neural Networks (RNNs): A gentle Introduction and Overview"
+date = 2019-11-01T00:00:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
