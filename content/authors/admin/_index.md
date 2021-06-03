@@ -10,14 +10,14 @@ authors:
 superuser: true
 
 # Role/position
-role: Research Scientist
+role: AI Resident
 
 # Organizations/Affiliations
 organizations:
-- name: Eberhard-Karls-University Tübingen
-  url: "https://uni-tuebingen.de/"
-- name: Max Planck Institute for Informatics
-  url: "https://www.mpi-inf.mpg.de/de/departments/computer-vision-and-machine-learning"
+- name: Apple
+  url: "https://www.apple.com/"
+#- name: Max Planck Institute for Informatics
+#  url: "https://www.mpi-inf.mpg.de/de/departments/computer-vision-and-machine-learning"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include deep learning and optimization.
@@ -26,15 +26,16 @@ interests:
 - Deep Learning
 - Optimization
 - Domain Generalization
+- NLP / Machine Translation
 
 
 education:
   courses:
-  - course: M.Sc. in Computer Science
-    institution: Eberhard-Karls-University Tübingen
+  - course: M. Sc. in Computer Science
+    institution: University of Tübingen
     year: 2021
-  - course: B.Sc. in Computer Science
-    institution: DHBW Stuttgart Campus Horb
+  - course: B. Sc. in Computer Science
+    institution: Cooperative State University Stuttgart
     year: 2018
 
 # Social/Academic Networking
@@ -70,8 +71,6 @@ user_groups:
 - Visitors
 ---
 
-I am a graduate student in computer science at [Eberhard-Karls-University](https://uni-tuebingen.de/) in Tübingen focusing on *Deep Learning* and currently working on *Explainable Domain Generalization* in cooperation with the Max-Planck-Institute for Informatics (MPI-INF) in the group of [Zeynep Akata](https://eml-unitue.de/people/zeynep-akata) and co-supervised by [Massimiliano Mancini](https://eml-unitue.de/people/massimiliano-mancini). Previously, I've been working on *Deep Learning Optimizers* in cooperation with the Max-Planck-Institute for Intelligent Systems (MPI-IS) in the group of [Philipp Hennig](https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/methods-of-machine-learning/personen/philipp-hennig/) and co-supervised by [Frank Schneider](https://fsschneider.netlify.com/). I've also been an [Extreme Blue intern](https://www.ibm.com/employment/extremeblue/) at IBM working with [Martin Oberhofer](https://www.linkedin.com/in/martin-oberhofer-9444382/).
-
-For my bachelors, I studied computer science in a dual setup at the [University of Applied Sciences](https://www.dhbw-stuttgart.de/home/) in Stuttgart which involved frequent and extended industry research and development projects on topics regarding *Manufacturing Execution Systems*. I've also done research with [Olaf Herden](https://expertenservice.dhbw-stuttgart.de/experteninnen-technik/informatik/olaf-herden/).
+I'm in the first cohort of AI Residents at Apple where I work on Machine Translation with the amazing team in Aachen, Germany. Previously, I've been a graduate student in computer science at the [University of Tübingen](https://uni-tuebingen.de/) working on *Explainable Domain Generalization* in cooperation with the Max-Planck-Institute for Informatics (MPI-INF) in the group of [Zeynep Akata](https://eml-unitue.de/people/zeynep-akata) and co-supervised by [Massimiliano Mancini](https://eml-unitue.de/people/massimiliano-mancini). I've also been working on *Optimization* in cooperation with the Max-Planck-Institute for Intelligent Systems (MPI-IS) in the group of [Philipp Hennig](https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/methods-of-machine-learning/personen/philipp-hennig/) where I was co-supervised by [Frank Schneider](https://fsschneider.netlify.com/). Before that, I've also been an [Extreme Blue intern](https://www.ibm.com/employment/extremeblue/) at IBM working with [Martin Oberhofer](https://www.linkedin.com/in/martin-oberhofer-9444382/).
                                                                                                                                                                                                                                                              
                                                                  
