@@ -52,6 +52,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/schmidt-robin/
+ - icon: instagram
+  icon_pack: fab
+  link: https://www.instagram.com/shuttermarc/
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.de/citations?user=20vb63kAAAAJ&hl=de
