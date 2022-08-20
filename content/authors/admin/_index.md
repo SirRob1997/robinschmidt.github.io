@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: AI Resident
+role: Machine Learning Research Engineer
 
 # Organizations/Affiliations
 organizations:
